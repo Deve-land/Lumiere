@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تماس با ما - Lumière</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h1>Lumière</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">خانه</a></li>
+                    <li><a href="products.html" class="nav-link">محصولات</a></li>
+                    <li><a href="about.html" class="nav-link">درباره ما</a></li>
+                    <li><a href="contact.html" class="nav-link">تماس با ما</a></li>
+                    <li><a href="cart.html" class="nav-link cart-icon"><i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+        <div class="container">
+            <div class="contact-hero-content">
+                <h1 class="contact-title">تماس با ما</h1>
+                <p class="contact-subtitle">ما آماده پاسخگویی به سوالات شما هستیم</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h2>فرم تماس</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">نام و نام خانوادگی</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">ایمیل</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">شماره تلفن</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">موضوع</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">انتخاب کنید</option>
+                                <option value="سوال">سوال</option>
+                                <option value="سفارش">سفارش</option>
+                                <option value="شکایت">شکایت</option>
+                                <option value="پیشنهاد">پیشنهاد</option>
+                                <option value="سایر">سایر</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">پیام</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="پیام خود را اینجا بنویسید..."></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">ارسال پیام</button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="contact-info-container">
+                    <h2>اطلاعات تماس</h2>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>تلفن تماس</h3>
+                                <p>۰۹۱۲۳۴۵۶۷۸۹</p>
+                                <p>۰۲۱-۱۲۳۴۵۶۷۸</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>واتساپ</h3>
+                                <p>۰۹۱۲۳۴۵۶۷۸۹</p>
+                                <a href="https://wa.me/989123456789" class="whatsapp-link" target="_blank">ارسال پیام</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>ایمیل</h3>
+                                <p>info@lumiere.ir</p>
+                                <p>support@lumiere.ir</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>آدرس</h3>
+                                <p>تهران، خیابان ولیعصر</p>
+                                <p>پلاک ۱۲۳، طبقه اول</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Hours -->
+    <section class="business-hours">
+        <div class="container">
+            <h2>ساعات کاری</h2>
+            <div class="hours-grid">
+                <div class="hours-item">
+                    <span class="day">شنبه تا چهارشنبه</span>
+                    <span class="time">۹:۰۰ - ۱۸:۰۰</span>
+                </div>
+                <div class="hours-item">
+                    <span class="day">پنجشنبه</span>
+                    <span class="time">۹:۰۰ - ۱۴:۰۰</span>
+                </div>
+                <div class="hours-item">
+                    <span class="day">جمعه</span>
+                    <span class="time">تعطیل</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Lumière</h3>
+                    <p>فروشگاه شمع‌های دست‌ساز با کیفیت</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>لینک‌های مفید</h4>
+                    <ul>
+                        <li><a href="index.html">خانه</a></li>
+                        <li><a href="products.html">محصولات</a></li>
+                        <li><a href="about.html">درباره ما</a></li>
+                        <li><a href="contact.html">تماس با ما</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>اطلاعات تماس</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> ۰۹۱۲۳۴۵۶۷۸۹</p>
+                        <p><i class="fas fa-envelope"></i> info@lumiere.ir</p>
+                        <p><i class="fas fa-map-marker-alt"></i> تهران، خیابان ولیعصر</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; ۱۴۰۲ Lumière. تمامی حقوق محفوظ است.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html> 

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شمع وانیل - Lumière</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="product-detail.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h1>Lumière</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">خانه</a></li>
+                    <li><a href="products.html" class="nav-link">محصولات</a></li>
+                    <li><a href="about.html" class="nav-link">درباره ما</a></li>
+                    <li><a href="#contact" class="nav-link">تماس با ما</a></li>
+                    <li><a href="cart.html" class="nav-link cart-icon"><i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Product Detail Section -->
+    <main class="product-detail-page">
+        <div class="container">
+            <!-- Breadcrumb -->
+            <nav class="breadcrumb">
+                <a href="index.html">خانه</a>
+                <i class="fas fa-chevron-left"></i>
+                <a href="products.html">محصولات</a>
+                <i class="fas fa-chevron-left"></i>
+                <span>شمع وانیل</span>
+            </nav>
+
+            <!-- Product Detail Content -->
+            <div class="product-detail-content">
+                <!-- Product Images -->
+                <div class="product-images">
+                    <div class="main-image">
+                        <div class="candle-emoji-large">🕯️</div>
+                    </div>
+                    <div class="thumbnail-images">
+                        <div class="thumbnail active">
+                            <div class="candle-emoji-small">🕯️</div>
+                        </div>
+                        <div class="thumbnail">
+                            <div class="candle-emoji-small">🕯️</div>
+                        </div>
+                        <div class="thumbnail">
+                            <div class="candle-emoji-small">🕯️</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="product-info">
+                    <h1 class="product-title">شمع وانیل</h1>
+                    
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="rating-text">(۴.۸ از ۵)</span>
+                        <span class="review-count">(۱۲۳ نظر)</span>
+                    </div>
+
+                    <div class="product-price">
+                        <span class="current-price">۲۵۰,۰۰۰ تومان</span>
+                        <span class="original-price">۳۰۰,۰۰۰ تومان</span>
+                        <span class="discount-badge">۱۷٪ تخفیف</span>
+                    </div>
+
+                    <div class="product-description">
+                        <p>شمع دست‌ساز وانیل با رایحه گرم و دلنشین که فضای خانه شما را با عطر شیرین وانیل پر می‌کند. این شمع با مواد طبیعی و با کیفیت بالا ساخته شده و مدت زمان سوختن طولانی‌ای دارد.</p>
+                    </div>
+
+                    <!-- Product Specifications -->
+                    <div class="product-specs">
+                        <h3>مشخصات محصول</h3>
+                        <div class="specs-grid">
+                            <div class="spec-item">
+                                <span class="spec-label">رایحه:</span>
+                                <span class="spec-value">وانیل</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">وزن:</span>
+                                <span class="spec-value">۲۰۰ گرم</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">مدت سوختن:</span>
+                                <span class="spec-value">۴۰-۵۰ ساعت</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">مواد تشکیل‌دهنده:</span>
+                                <span class="spec-value">موم طبیعی، فتیله پنبه‌ای، روغن اسانس طبیعی</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Stock Status -->
+                    <div class="stock-status">
+                        <i class="fas fa-check-circle"></i>
+                        <span>موجود در انبار</span>
+                    </div>
+
+                    <!-- Product Options -->
+                    <div class="product-options">
+                        <div class="option-group">
+                            <label>انتخاب رایحه:</label>
+                            <div class="option-buttons">
+                                <button class="option-btn active" data-value="vanilla">وانیل</button>
+                                <button class="option-btn" data-value="lavender">اسطوخودوس</button>
+                                <button class="option-btn" data-value="cinnamon">دارچین</button>
+                            </div>
+                        </div>
+
+                        <div class="option-group">
+                            <label>انتخاب سایز:</label>
+                            <div class="option-buttons">
+                                <button class="option-btn active" data-value="small">کوچک (۱۵۰ گرم)</button>
+                                <button class="option-btn" data-value="medium">متوسط (۲۰۰ گرم)</button>
+                                <button class="option-btn" data-value="large">بزرگ (۲۵۰ گرم)</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quantity Selector -->
+                    <div class="quantity-selector">
+                        <label>تعداد:</label>
+                        <div class="quantity-controls">
+                            <button class="quantity-btn">-</button>
+                            <input type="number" value="1" min="1" max="10" class="quantity-input">
+                            <button class="quantity-btn">+</button>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="action-buttons">
+                        <button class="add-to-cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            افزودن به سبد خرید
+                        </button>
+                        <button class="wishlist-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+
+                    
+
+                    <!-- Additional Info -->
+                    <div class="additional-info">
+                        <div class="info-item">
+                            <i class="fas fa-truck"></i>
+                            <span>ارسال رایگان برای خرید بالای ۵۰۰,۰۰۰ تومان</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-undo"></i>
+                            <span>بازگشت کالا تا ۷ روز</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>ضمانت اصالت کالا</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Tabs -->
+            <div class="product-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="description">توضیحات</button>
+                    <button class="tab-btn" data-tab="specifications">مشخصات</button>
+                    <button class="tab-btn" data-tab="reviews">نظرات</button>
+                </div>
+
+                <div class="tab-content">
+                    <div class="tab-pane active" id="description">
+                        <h3>توضیحات کامل</h3>
+                        <p>شمع وانیل Lumière با استفاده از بهترین مواد طبیعی و تکنیک‌های سنتی دست‌سازی تولید می‌شود. این شمع با رایحه گرم و دلنشین وانیل، فضای خانه شما را با عطر شیرین و آرامش‌بخش پر می‌کند.</p>
+                        <p>ویژگی‌های این محصول:</p>
+                        <ul>
+                            <li>ساخته شده از موم طبیعی ۱۰۰٪</li>
+                            <li>فتیله پنبه‌ای با کیفیت بالا</li>
+                            <li>روغن اسانس طبیعی وانیل</li>
+                            <li>بدون مواد شیمیایی مضر</li>
+                            <li>سوختن تمیز و بدون دود</li>
+                            <li>بسته‌بندی زیبا و مناسب هدیه</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-pane" id="specifications">
+                        <h3>مشخصات فنی</h3>
+                        <table class="specs-table">
+                            <tr>
+                                <td>ابعاد</td>
+                                <td>۸ × ۸ × ۱۲ سانتی‌متر</td>
+                            </tr>
+                            <tr>
+                                <td>وزن</td>
+                                <td>۲۰۰ گرم</td>
+                            </tr>
+                            <tr>
+                                <td>مدت سوختن</td>
+                                <td>۴۰-۵۰ ساعت</td>
+                            </tr>
+                            <tr>
+                                <td>نوع موم</td>
+                                <td>موم طبیعی سویا</td>
+                            </tr>
+                            <tr>
+                                <td>نوع فتیله</td>
+                                <td>پنبه‌ای طبیعی</td>
+                            </tr>
+                            <tr>
+                                <td>رایحه</td>
+                                <td>وانیل طبیعی</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="tab-pane" id="reviews">
+                        <h3>نظرات مشتریان</h3>
+                        <div class="reviews-summary">
+                            <div class="average-rating">
+                                <div class="rating-number">۴.۸</div>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="total-reviews">از ۱۲۳ نظر</div>
+                            </div>
+                        </div>
+
+                        <div class="review-item">
+                            <div class="review-header">
+                                <div class="reviewer-info">
+                                    <div class="reviewer-avatar">س</div>
+                                    <div class="reviewer-name">سارا احمدی</div>
+                                </div>
+                                <div class="review-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <p class="review-text">رایحه فوق‌العاده‌ای داره! واقعاً کیفیت بالایی داره و مدت زمان سوختنش هم عالیه. حتماً دوباره خرید می‌کنم.</p>
+                            <div class="review-date">۲ هفته پیش</div>
+                        </div>
+
+                        <div class="review-item">
+                            <div class="review-header">
+                                <div class="reviewer-info">
+                                    <div class="reviewer-avatar">ع</div>
+                                    <div class="reviewer-name">علی محمدی</div>
+                                </div>
+                                <div class="review-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                            <p class="review-text">بسته‌بندی خیلی زیبایی داره و کیفیت محصول عالیه. رایحه وانیلش واقعاً دلنشینه.</p>
+                            <div class="review-date">۱ ماه پیش</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Related Products -->
+            <div class="related-products">
+                <h3>محصولات مشابه</h3>
+                <div class="related-grid">
+                    <div class="related-product">
+                        <div class="candle-emoji">🕯️</div>
+                        <h4>شمع اسطوخودوس</h4>
+                        <p>۲۲۰,۰۰۰ تومان</p>
+                    </div>
+                    <div class="related-product">
+                        <div class="candle-emoji">🕯️</div>
+                        <h4>شمع دارچین</h4>
+                        <p>۲۸۰,۰۰۰ تومان</p>
+                    </div>
+                    <div class="related-product">
+                        <div class="candle-emoji">🕯️</div>
+                        <h4>شمع گل رز</h4>
+                        <p>۲۴۰,۰۰۰ تومان</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Lumière</h3>
+                    <p>فروشگاه شمع‌های دست‌ساز با کیفیت</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>لینک‌های مفید</h4>
+                    <ul>
+                        <li><a href="#home">خانه</a></li>
+                        <li><a href="products.html">محصولات</a></li>
+                        <li><a href="about.html">درباره ما</a></li>
+                        <li><a href="contact.html">تماس با ما</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>اطلاعات تماس</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> ۰۹۱۲۳۴۵۶۷۸۹</p>
+                        <p><i class="fas fa-envelope"></i> info@lumiere.ir</p>
+                        <p><i class="fas fa-map-marker-alt"></i> تهران، خیابان ولیعصر</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; ۱۴۰۲ Lumière. تمامی حقوق محفوظ است.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="product-detail.js"></script>
+</body>
+</html> 

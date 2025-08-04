@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محصولات - Lumière</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="products.css">
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h1>Lumière</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">خانه</a></li>
+                    <li><a href="products.html" class="nav-link active">محصولات</a></li>
+                    <li><a href="about.html" class="nav-link">درباره ما</a></li>
+                    <li><a href="#contact" class="nav-link">تماس با ما</a></li>
+                    <li><a href="cart.html" class="nav-link cart-icon"><i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Products Page Content -->
+    <div class="products-page">
+        <div class="container">
+            <!-- Page Header -->
+            <div class="page-header">
+                <h1>محصولات Lumière</h1>
+                <p>مجموعه کامل شمع‌های دست‌ساز با کیفیت</p>
+            </div>
+
+            <!-- Search and Sort Bar -->
+            <div class="search-sort-bar">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchInput" placeholder="جستجو در محصولات...">
+                </div>
+                <div class="sort-options">
+                    <select id="sortSelect">
+                        <option value="newest">جدیدترین</option>
+                        <option value="price-low">ارزان‌ترین</option>
+                        <option value="price-high">گران‌ترین</option>
+                        <option value="popular">محبوب‌ترین</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="products-layout">
+                <!-- Sidebar Filters -->
+                <aside class="filters-sidebar">
+                    <div class="filter-section">
+                        <h3>فیلترها</h3>
+                        
+                        <!-- Price Range -->
+                        <div class="filter-group">
+                            <h4>محدوده قیمت</h4>
+                            <div class="price-range">
+                                <input type="range" id="priceRange" min="0" max="500000" step="10000" value="500000">
+                                <div class="price-labels">
+                                    <span>۰ تومان</span>
+                                    <span id="priceValue">۵۰۰,۰۰۰ تومان</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Fragrance Filter -->
+                        <div class="filter-group">
+                            <h4>رایحه</h4>
+                            <div class="checkbox-group">
+                                <label class="checkbox-item">
+                                    <input type="checkbox" value="vanilla" checked>
+                                    <span>وانیل</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" value="lavender" checked>
+                                    <span>اسطوخودوس</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" value="cinnamon" checked>
+                                    <span>دارچین</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" value="rose" checked>
+                                    <span>گل سرخ</span>
+                                </label>
+                                <label class="checkbox-item">
+                                    <input type="checkbox" value="jasmine" checked>
+                                    <span>یاس</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Color Filter -->
+                        <div class="filter-group">
+                            <h4>رنگ</h4>
+                            <div class="color-options">
+                                <div class="color-option" data-color="white">
+                                    <div class="color-circle white"></div>
+                                    <span>سفید</span>
+                                </div>
+                                <div class="color-option" data-color="cream">
+                                    <div class="color-circle cream"></div>
+                                    <span>کرم</span>
+                                </div>
+                                <div class="color-option" data-color="pink">
+                                    <div class="color-circle pink"></div>
+                                    <span>صورتی</span>
+                                </div>
+                                <div class="color-option" data-color="purple">
+                                    <div class="color-circle purple"></div>
+                                    <span>بنفش</span>
+                                </div>
+                                <div class="color-option" data-color="blue">
+                                    <div class="color-circle blue"></div>
+                                    <span>آبی</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Clear Filters -->
+                        <button class="clear-filters">پاک کردن فیلترها</button>
+                    </div>
+                </aside>
+
+                <!-- Products Grid -->
+                <main class="products-main">
+                    <div class="products-header">
+                        <div class="results-info">
+                            <span id="resultsCount">۱۲ محصول یافت شد</span>
+                        </div>
+                        <div class="view-options">
+                            <button class="view-btn active" data-view="grid">
+                                <i class="fas fa-th"></i>
+                            </button>
+                            <button class="view-btn" data-view="list">
+                                <i class="fas fa-list"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="products-grid" id="productsGrid">
+                        <!-- Product cards will be dynamically generated -->
+                    </div>
+
+                    <!-- Load More Button -->
+                    <div class="load-more">
+                        <button class="load-more-btn">نمایش بیشتر</button>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Lumière</h3>
+                    <p>فروشگاه شمع‌های دست‌ساز با کیفیت</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>لینک‌های مفید</h4>
+                    <ul>
+                        <li><a href="index.html">خانه</a></li>
+                        <li><a href="products.html">محصولات</a></li>
+                        <li><a href="about.html">درباره ما</a></li>
+                        <li><a href="#contact">تماس با ما</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>اطلاعات تماس</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> ۰۹۱۲۳۴۵۶۷۸۹</p>
+                        <p><i class="fas fa-envelope"></i> info@lumiere.ir</p>
+                        <p><i class="fas fa-map-marker-alt"></i> تهران، خیابان ولیعصر</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; ۱۴۰۲ Lumière. تمامی حقوق محفوظ است.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="products.js"></script>
+</body>
+</html> 
